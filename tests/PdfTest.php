@@ -24,7 +24,7 @@ class PdfTest extends PdfTestCase
 	{
 		$pdf = PDF::loadFile('tests/views/exposify-expose.html');
 
-		$this->compareToSnapshot('exposify', $pdf->output());
+		$this->compareToSnapshot('exposify.pdf', $pdf->output());
 	}
 
     /**
