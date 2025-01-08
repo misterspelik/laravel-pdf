@@ -13,9 +13,6 @@
     ],
     "require": {
         "php": "^7.4 || ^8.0",
-        "ext-gd": "*",
-        "ext-imagick": "*",
-        "ext-mbstring": "*",
         "misterspelik/mpdf": "^8.1.8",
         "psr/http-message": "^1.1 || ^2.0",
         "psr/log": "^1.1.0 || ^2.0.0 || ^3.0.0"
@@ -23,6 +20,11 @@
     "require-dev": {
         "phpunit/phpunit": "^9.6.0",
         "orchestra/testbench": "^8.5.0"
+    },
+    "suggest": {
+        "ext-gd": "Needed to support images creation and conversion",
+        "ext-imagick": "Allows more advanced work with images",
+        "ext-mbstring": "Needed in order to work with multi-byte strings"
     },
     "autoload": {
         "psr-4": {

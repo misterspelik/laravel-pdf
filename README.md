@@ -58,6 +58,7 @@ function generate_pdf() {
 		'foo' => 'bar'
 	];
 	$pdf = PDF::loadView('pdf.document', $data);
+
 	return $pdf->stream('document.pdf');
 }
 ```
